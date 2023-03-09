@@ -18,8 +18,11 @@ model User {
   email String
   hash  String
 
-  firstName String
-  lastName  String
+  firstName String?
+  lastName  String?
+
+  
+  @@map("users")
 }
 
 model Bookmark {
@@ -30,4 +33,6 @@ model Bookmark {
   title       String
   description String?
   link        String
+
+  @@map("bookmarks")
 }

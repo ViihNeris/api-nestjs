@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import { Injectable } from "@nestjs/common";
 import { PrismaService } from "../prisma/prisma.service";
 import { AuthDto } from "./dto";
@@ -17,7 +16,13 @@ export class AuthService {
         email: dto.email,
         hash,
       },
+      // select: {
+      //   id: true,
+      //   email: true,
+      //   createdAt: true,
+      // },
     });
+    delete user.hash;
 
     // return the saved user
     return user;

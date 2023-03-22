@@ -1,4 +1,7 @@
 # API-NestJS
+Este projeto consiste em ser uma <b>API CRUD REST</b> com testes end-to-end usando técnicas modernas de desenvolvimento da web. NestJs é uma estrutura NodeJS, a qual está em rápido crescimento: Auxilia a criação de aplicativos de back-end escaláveis e sustentáveis.
+
+Inclui a <b>Bookmarks API</b> desenvolvida do zero, utilizando <i>NestJS</i>, <i>Docker</i>, <i>Postgres</i>, <i>PassportJS</i>, <i>Prisma</i>, <i>Pactum</i> e <i>Dotenv</i>.
 
 ## Desenvolvido em:
 

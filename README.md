@@ -3,6 +3,42 @@ Este projeto consiste em ser uma <b>API CRUD REST</b> com testes end-to-end usan
 
 Inclui a <b>Bookmarks API</b> desenvolvida do zero, utilizando <i>NestJS</i>, <i>Docker</i>, <i>Postgres</i>, <i>PassportJS</i>, <i>Prisma</i>, <i>Pactum</i> e <i>Dotenv</i>.
 
+## O Projeto 
+Neste projeto foi utilizado o framework Open Source INSOMNIA (para desenvolvimento/teste da API Client).
+
+## USERS 👥
+### POST 🟢 – Signup | Cadastrando um usuário 👤
+Para cadastrar um usuário, é necessário preencher os campos "email" e "password". Neste cadastro é gerado um token que expira dentro de 15 minutos.
+
+![image](https://user-images.githubusercontent.com/93789218/227270407-4a8588ca-7702-417c-8192-cfb7f3b211bf.png)
+
+![image](https://user-images.githubusercontent.com/93789218/227270457-085e1edd-bde0-4c79-a502-22ab5e2e1a4b.png)
+
+### POST 🟢 – Signin
+Com as credenciais geradas, é possível realizar o login. Ao logar, um novo token será gerado, também com a duração de 15 minutos.
+
+![image](https://user-images.githubusercontent.com/93789218/227271060-7b3b7c5d-9654-415a-84fb-b8e4d4d00cdf.png)
+
+###### Esses tokens servem para fins de Autorização, que você verá mais a frente.
+
+### GET 🔵 – Obtendo usuários por ID
+A partir da criação do usuário (ou login do mesmo) um token será gerado e a partir dele será possível obter as informações do usuário.
+
+![image](https://user-images.githubusercontent.com/93789218/227272634-cf4502d5-01b9-492f-bb92-43b7b71fcf0d.png)
+
+![image](https://user-images.githubusercontent.com/93789218/227272807-ecb3d94e-f921-4976-a37c-f791246addc3.png)
+
+### PATCH 🟠 – UPDATE | Atualizando o usuário
+Caso seja necessário, você pode atualizar o email do usuário ou até mesmo atribuir um "firstName" e "lastName" para o mesmo (não inseridos nos passos anteriores).
+
+![image](https://user-images.githubusercontent.com/93789218/227273678-ce054375-d48f-428d-be0c-434dbf803471.png)
+
+![image](https://user-images.githubusercontent.com/93789218/227273760-ed802a0e-177f-415a-8052-722b6e8fb393.png)
+
+![image](https://user-images.githubusercontent.com/93789218/227273789-47ff5f0f-b159-4606-9bb2-85be0ff0a989.png)
+
+###### Neste exemplo, o usuário de ID 28 (gerado nos passos anteriores) teve seu email, firstName e lastName modificados.
+
 ## Desenvolvido em:
 
 <p align="center">

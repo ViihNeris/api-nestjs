@@ -19,7 +19,12 @@ Com as credenciais geradas, é possível realizar o login. Ao logar, um novo tok
 
 ![image](https://user-images.githubusercontent.com/93789218/227271060-7b3b7c5d-9654-415a-84fb-b8e4d4d00cdf.png)
 
-###### Esses tokens servem para fins de Autorização, que você verá mais a frente.
+###### Todos os tokens servem para fins de Autorização, que você verá mais a frente.
+
+Caso você erre alguma credencial, uma response <b>403</b> será retornada:
+
+![image](https://user-images.githubusercontent.com/93789218/227315486-3588e2be-2f2a-4c52-93b1-0b0187d186f5.png)
+
 
 ### GET 🔵 – Obtendo usuários por ID
 A partir da criação do usuário (ou login do mesmo) um token será gerado e a partir dele será possível obter as informações do usuário.
@@ -27,6 +32,12 @@ A partir da criação do usuário (ou login do mesmo) um token será gerado e a 
 ![image](https://user-images.githubusercontent.com/93789218/227272634-cf4502d5-01b9-492f-bb92-43b7b71fcf0d.png)
 
 ![image](https://user-images.githubusercontent.com/93789218/227272807-ecb3d94e-f921-4976-a37c-f791246addc3.png)
+
+Caso você não tenha um token ou utilize um inválido, a response <b>401</b> será retornada:
+
+![image](https://user-images.githubusercontent.com/93789218/227317718-08822bd9-5dd3-4a3f-9281-c3256ed5bb6e.png)
+
+
 
 ### PATCH 🟠 – UPDATE | Atualizando o usuário
 Caso seja necessário, você pode atualizar o email do usuário ou até mesmo atribuir um "firstName" e "lastName" para o mesmo (não inseridos nos passos anteriores).
@@ -38,6 +49,8 @@ Caso seja necessário, você pode atualizar o email do usuário ou até mesmo at
 ![image](https://user-images.githubusercontent.com/93789218/227273789-47ff5f0f-b159-4606-9bb2-85be0ff0a989.png)
 
 ###### Neste exemplo, o usuário de ID 28 (gerado nos passos anteriores) teve seu email, firstName e lastName modificados.
+
+> Como a solução sabia qual ID eu queria editar? <br> R: Novamente, o token foi o responsável! Ao tê-lo no Header, ele consegue identificar a qual usuário você se refere, tendo em vista que cada registro tem um token único.
 
 ## Desenvolvido em:
 

@@ -1,4 +1,4 @@
-# API-NestJS
+# API-NestJS 🌐🔴
 Este projeto consiste em ser uma <b>API CRUD REST</b> com testes end-to-end usando técnicas modernas de desenvolvimento da web. NestJs é uma estrutura NodeJS, a qual está em rápido crescimento: Auxilia a criação de aplicativos de back-end escaláveis e sustentáveis.
 
 Inclui a <b>Bookmarks API</b> desenvolvida do zero, utilizando <i>NestJS</i>, <i>Docker</i>, <i>Postgres</i>, <i>PassportJS</i>, <i>Prisma</i>, <i>Pactum</i> e <i>Dotenv</i>.
@@ -31,7 +31,7 @@ A partir da criação do usuário (ou login do mesmo) um token será gerado e a 
 ### PATCH 🟠 – UPDATE | Atualizando o usuário
 Caso seja necessário, você pode atualizar o email do usuário ou até mesmo atribuir um "firstName" e "lastName" para o mesmo (não inseridos nos passos anteriores).
 
-![image](https://user-images.githubusercontent.com/93789218/227273678-ce054375-d48f-428d-be0c-434dbf803471.png)
+![image](https://user-images.githubusercontent.com/93789218/227275243-c1bc621d-3960-48df-8866-071b6c26a093.png)
 
 ![image](https://user-images.githubusercontent.com/93789218/227273760-ed802a0e-177f-415a-8052-722b6e8fb393.png)
 

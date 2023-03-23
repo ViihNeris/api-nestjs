@@ -21,7 +21,7 @@ Com as credenciais geradas, é possível realizar o login. Ao logar, um novo tok
 
 ###### Todos os tokens servem para fins de Autorização, que você verá mais a frente.
 
-Caso você erre alguma credencial, uma response <b>403</b> será retornada:
+Caso você erre alguma credencial, uma response <b>```403```</b> será retornada:
 
 ![image](https://user-images.githubusercontent.com/93789218/227315486-3588e2be-2f2a-4c52-93b1-0b0187d186f5.png)
 
@@ -33,11 +33,9 @@ A partir da criação do usuário (ou login do mesmo) um token será gerado e a 
 
 ![image](https://user-images.githubusercontent.com/93789218/227272807-ecb3d94e-f921-4976-a37c-f791246addc3.png)
 
-Caso você não tenha um token ou utilize um inválido, a response <b>401</b> será retornada:
+Caso você não tenha um token ou utilize um inválido (```não só aqui, mas em qualquer Request```), a response <b>```401```</b> será retornada:
 
 ![image](https://user-images.githubusercontent.com/93789218/227317718-08822bd9-5dd3-4a3f-9281-c3256ed5bb6e.png)
-
-
 
 ### PATCH 🟠 – UPDATE | Atualizando o usuário
 Caso seja necessário, você pode atualizar o email do usuário ou até mesmo atribuir um "firstName" e "lastName" para o mesmo (não inseridos nos passos anteriores).
@@ -50,7 +48,50 @@ Caso seja necessário, você pode atualizar o email do usuário ou até mesmo at
 
 ###### Neste exemplo, o usuário de ID 28 (gerado nos passos anteriores) teve seu email, firstName e lastName modificados.
 
-> Como a solução sabia qual ID eu queria editar? <br> R: Novamente, o token foi o responsável! Ao tê-lo no Header, ele consegue identificar a qual usuário você se refere, tendo em vista que cada registro tem um token único.
+> **Note** <br> Como a solução sabia qual ID eu queria editar? <br> R: Novamente, o token foi o responsável! Ao tê-lo no Header, ele consegue identificar a qual usuário você se refere, tendo em vista que cada registro tem um token único. <br>
+Por isso, cada vez que manipularmos algum registro (tanto em Users quanto em Bookmarks, que você verá a seguir) tenha em mente que <b>há um TOKEN por trás.</b>
+
+## BOOKMARKS 📑
+Para conseguir registrar um novo Bookmark, você deve vinculá-lo a um usuário. Utilizaremos o criado anteriormente (ID 28).
+
+### POST 🟢 – Cadastrando e vinculando um Bookmark 
+
+![image](https://user-images.githubusercontent.com/93789218/227324631-71be56d3-7348-4c1e-8b58-1b10b772a84e.png)
+
+![image](https://user-images.githubusercontent.com/93789218/227324840-a9acb71d-5d8e-4cbd-8eb6-94a62392e0a4.png)
+
+### GET 🔵 – Obtendo o Bookmark por ID
+
+Através da rota ```/bookmarks/{id}``` é possível visualizar o bookmark criado:
+
+![image](https://user-images.githubusercontent.com/93789218/227325909-4dc3abe9-8820-4483-b039-7e53a98d69e6.png)
+
+![image](https://user-images.githubusercontent.com/93789218/227326115-e9ff349b-56d5-462f-a8fa-d24581c26f6a.png)
+
+Caso o ID não exista, nada é retornado:
+
+![image](https://user-images.githubusercontent.com/93789218/227326202-19496e7b-989d-429d-a239-34253ac4a18d.png)
+
+### PATCH 🟠 – UPDATE | Atualizando o Bookmark 
+
+Caso desejado, é possível modificar os campos ```title```, ```description``` e ```link```. Vamos modificar o bookmark de ID 5 vinculado ao user de ID 28 (criado nos passos anteriores):
+
+![image](https://user-images.githubusercontent.com/93789218/227337979-bf5fb04a-e1fd-4e4b-94bc-3a86a90ccc6c.png)
+
+![image](https://user-images.githubusercontent.com/93789218/227338474-6e342a4c-9dfc-42ca-a169-359f13888c89.png)
+
+### DELETE 🔴 – Excluindo um Bookmark
+
+Iremos deletar o bookmark de ```ID 4``` (também vinculado ao user ```ID 28```).
+
+![image](https://user-images.githubusercontent.com/93789218/227340003-58d29bb1-3d33-49d6-8e3c-9030a86ce28b.png)
+
+Após o êxito da operação, o response <b>```204```</b> será retornado:
+
+![image](https://user-images.githubusercontent.com/93789218/227340123-e6a44c5f-d0d5-4d02-8312-bc9085ddef04.png)
+
+![image](https://user-images.githubusercontent.com/93789218/227340206-1df9655e-90cb-499c-9312-fb5349159e91.png)
+
 
 ## Desenvolvido em:
 

@@ -96,7 +96,7 @@ Após o êxito da operação, o response <b>```204```</b> será retornado:
 
 Testes unitários, assim como qualquer teste automatizado, não servem principalmente para verificar se uma função específica está funcionando, mas sim para garantir que sua aplicação continue funcionando após alguma alteração em sua base de código.
 
-Em nossa solução, todos os testes obtiveram êxito em sua execução:
+Em nossa solução, todos os testes (desenvolvidos juntamente com <b><i>PactumJS</i></b>) obtiveram êxito em sua execução:
 
 ![image](https://user-images.githubusercontent.com/93789218/227583270-5d1ceebc-a86e-43a3-859c-05833f0acdbe.png)
 
@@ -136,7 +136,6 @@ Como notamos nos tópicos anteriores, este projeto contém 2 Entidades: Users e 
 - Utilize "npx dotenv -e .env.test -- prisma studio" para manipular o ambiente de testes.
 ```
 
-
 ## Desenvolvido em:
 
 <p align="center">
@@ -171,3 +170,8 @@ Como notamos nos tópicos anteriores, este projeto contém 2 Entidades: Users e 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+<br>
+
+## Obrigada! ✅
+Acompanhe mais projetos meus em https://github.com/ViihNeris 😉💜👩🏻‍💻

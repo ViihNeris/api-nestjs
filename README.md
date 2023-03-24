@@ -92,6 +92,42 @@ Após o êxito da operação, o response <b>```204```</b> será retornado:
 
 ![image](https://user-images.githubusercontent.com/93789218/227340206-1df9655e-90cb-499c-9312-fb5349159e91.png)
 
+## Visualização de Dados 🎲
+
+
+### Docker 🟦
+Neste projeto foram utilizados 2 Databases: 1 para "Produção" e 1 para Testes.
+
+![image](https://user-images.githubusercontent.com/93789218/227579601-22c92b8a-6996-4304-9cc5-98799b16b328.png)
+
+### Prisma 🟪
+<b>Prisma Client</b> é um construtor de consultas gerado automaticamente e fortemente tipado que pode ser usado para ler e escrever dados programaticamente em um banco de dados a partir de um aplicativo NodeJS ou TypeScript.
+
+Como notamos nos tópicos anteriores, este projeto contém 2 Entidades: Users e Bookmarks. O Prisma Client consegue nos trazer uma representação visual disso, tanto no ambiente de testes quanto de produção:
+
+- Dados de Produção
+  - Users 👥
+   ![image](https://user-images.githubusercontent.com/93789218/227579983-23317e11-0b7c-4595-a44c-d65206834a6b.png)
+  - Bookmarks 📑
+  ![image](https://user-images.githubusercontent.com/93789218/227580483-7d95f6d8-ef45-4fac-aa55-81910ceff470.png)
+  
+  <br>
+  
+  > **Note**<br> Note como o ```ID 28``` está referenciado em ```Bookmarks```. Perceba também como foi indicado que há 1 Bookmark atrelado ao registro do ID 28 em```Users```. Tudo está conectado 😉
+
+<br>
+
+- Dados de Testes
+  - Users 👥
+  ![image](https://user-images.githubusercontent.com/93789218/227581533-8b2c861a-2789-425d-aafc-5cc20e2345b7.png)
+
+  - Bookmarks 📑
+  ![image](https://user-images.githubusercontent.com/93789218/227581543-e77bfe55-0293-496b-b965-4eef8815665b.png)
+
+```diff
+- Utilize "npx dotenv -e .env.test -- prisma studio" para manipular o ambiente de testes.
+```
+
 
 ## Desenvolvido em:
 

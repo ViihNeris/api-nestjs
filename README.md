@@ -111,7 +111,7 @@ Neste projeto foram utilizados 2 Databases: 1 para "Produção" e 1 para Testes.
 ### Prisma Studio🟪
 <b>Prisma Studio</b> é o produto principal da tecnologia. Trata-se de uma interface do usuário feita para visualizar e editar os dados na database.
 
-Como notamos nos tópicos anteriores, este projeto contém 2 Entidades: Users e Bookmarks. O Prisma Client consegue nos trazer uma representação visual disso, tanto no ambiente de testes quanto de produção:
+Como notamos nos tópicos anteriores, este projeto contém 2 Entidades: Users e Bookmarks. O <b>Prisma Studio</b> consegue nos trazer uma representação visual disso, tanto no ambiente de testes quanto de produção:
 
 - Dados de Produção
   - Users 👥

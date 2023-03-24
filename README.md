@@ -108,8 +108,8 @@ Neste projeto foram utilizados 2 Databases: 1 para "Produção" e 1 para Testes.
 
 ![image](https://user-images.githubusercontent.com/93789218/227579601-22c92b8a-6996-4304-9cc5-98799b16b328.png)
 
-### Prisma 🟪
-<b>Prisma Client</b> é um construtor de consultas gerado automaticamente e fortemente tipado que pode ser usado para ler e escrever dados programaticamente em um banco de dados a partir de um aplicativo NodeJS ou TypeScript.
+### Prisma Studio🟪
+<b>Prisma Studio</b> é o produto principal da tecnologia. Trata-se de uma interface do usuário feita para visualizar e editar os dados na database.
 
 Como notamos nos tópicos anteriores, este projeto contém 2 Entidades: Users e Bookmarks. O Prisma Client consegue nos trazer uma representação visual disso, tanto no ambiente de testes quanto de produção:
 
@@ -171,7 +171,11 @@ Como notamos nos tópicos anteriores, este projeto contém 2 Entidades: Users e 
 
 Nest is [MIT licensed](LICENSE).
 
-<br>
+## Referências
+
+- Repositório guia para este projeto: https://github.com/vladwulf/nestjs-api-tutorial
+- Testes Unitários: https://dayvsonlima.medium.com/entenda-de-uma-vez-por-todas-o-que-são-testes-unitários-para-que-servem-e-como-fazê-los-2a6f645bab3
+- Prisma: https://blog.rocketseat.com.br/prisma-uma-das-melhores-coisa-que-ja-aconteceu-no-ecossistema/#:~:text=Prisma%20é%20uma%20ferramenta%20open,js%20e%20TypeScript
 
 ## Obrigada! ✅
 Acompanhe mais projetos meus em https://github.com/ViihNeris 😉💜👩🏻‍💻

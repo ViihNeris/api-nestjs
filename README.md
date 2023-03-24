@@ -4,11 +4,11 @@ Este projeto consiste em ser uma <b>API CRUD REST</b> com testes end-to-end usan
 Inclui a <b>Bookmarks API</b> desenvolvida do zero, utilizando <i>NestJS</i>, <i>Docker</i>, <i>Postgres</i>, <i>PassportJS</i>, <i>Prisma</i>, <i>Pactum</i> e <i>Dotenv</i>.
 
 ## O Projeto 
-Neste projeto foi utilizado o framework Open Source INSOMNIA (para desenvolvimento/teste da API Client).
+Neste projeto foi utilizado o framework Open Source <b>INSOMNIA</b> (para desenvolvimento/teste da API Client).
 
 ## USERS 👥
 ### POST 🟢 – Signup | Cadastrando um usuário 👤
-Para cadastrar um usuário, é necessário preencher os campos "email" e "password". Neste cadastro é gerado um token que expira dentro de 15 minutos.
+Para cadastrar um usuário, é necessário preencher os campos ```email``` e ```password```. Neste cadastro é gerado um <i>token</i> que expira dentro de 15 minutos.
 
 ![image](https://user-images.githubusercontent.com/93789218/227270407-4a8588ca-7702-417c-8192-cfb7f3b211bf.png)
 
@@ -38,7 +38,7 @@ Caso você não tenha um token ou utilize um inválido (```não só aqui, mas em
 ![image](https://user-images.githubusercontent.com/93789218/227317718-08822bd9-5dd3-4a3f-9281-c3256ed5bb6e.png)
 
 ### PATCH 🟠 – UPDATE | Atualizando o usuário
-Caso seja necessário, você pode atualizar o email do usuário ou até mesmo atribuir um "firstName" e "lastName" para o mesmo (não inseridos nos passos anteriores).
+Caso seja necessário, você pode atualizar o email do usuário ou até mesmo atribuir um ```firstName``` e ```lastName``` para o mesmo (não inseridos nos passos anteriores).
 
 ![image](https://user-images.githubusercontent.com/93789218/227275243-c1bc621d-3960-48df-8866-071b6c26a093.png)
 
@@ -49,10 +49,10 @@ Caso seja necessário, você pode atualizar o email do usuário ou até mesmo at
 ###### Neste exemplo, o usuário de ID 28 (gerado nos passos anteriores) teve seu email, firstName e lastName modificados.
 
 > **Note** <br> Como a solução sabia qual ID eu queria editar? <br> R: Novamente, o token foi o responsável! Ao tê-lo no Header, ele consegue identificar a qual usuário você se refere, tendo em vista que cada registro tem um token único. <br>
-Por isso, cada vez que manipularmos algum registro (tanto em Users quanto em Bookmarks, que você verá a seguir) tenha em mente que <b>há um TOKEN por trás.</b>
+Por isso, cada vez que manipularmos algum registro (tanto em ```Users``` quanto em ```Bookmarks```, que você verá a seguir) tenha em mente que <b>há um TOKEN por trás.</b>
 
 ## BOOKMARKS 📑
-Para conseguir registrar um novo Bookmark, você deve vinculá-lo a um usuário. Utilizaremos o criado anteriormente (ID 28).
+Para conseguir registrar um novo Bookmark, você deve vinculá-lo a um usuário. Utilizaremos o criado anteriormente (```ID 28```).
 
 ### POST 🟢 – Cadastrando e vinculando um Bookmark 
 

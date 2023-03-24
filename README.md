@@ -92,8 +92,16 @@ Após o êxito da operação, o response <b>```204```</b> será retornado:
 
 ![image](https://user-images.githubusercontent.com/93789218/227340206-1df9655e-90cb-499c-9312-fb5349159e91.png)
 
-## Visualização de Dados 🎲
+## Testes Unitários 👁‍🗨
 
+Testes unitários, assim como qualquer teste automatizado, não servem principalmente para verificar se uma função específica está funcionando, mas sim para garantir que sua aplicação continue funcionando após alguma alteração em sua base de código.
+
+Em nossa solução, todos os testes obtiveram êxito em sua execução:
+
+![image](https://user-images.githubusercontent.com/93789218/227583270-5d1ceebc-a86e-43a3-859c-05833f0acdbe.png)
+
+
+## Visualização de Dados 🎲
 
 ### Docker 🟦
 Neste projeto foram utilizados 2 Databases: 1 para "Produção" e 1 para Testes.
